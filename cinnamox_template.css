@@ -1282,6 +1282,17 @@ StScrollBar StButton#hhandle:hover {
     border: 1px solid #TEXT;
     border-radius: 12px;
 }
+.window-list-preview {
+    background-gradient-direction: horizontal;
+    background-gradient-start: #DARKBG;
+    background-gradient-end: #LIGHTBG;
+    border-radius: 12px;
+    border: 1px solid #TEXT;
+    padding: 8px;
+    spacing 4px;
+    font-size: 1em;
+    color: #TEXT;
+}
 
 /* ===================================================================
  * Sound Applet (sound@cinnamon.org)
