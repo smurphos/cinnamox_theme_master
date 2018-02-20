@@ -792,8 +792,7 @@ StScrollBar StButton#hhandle:hover {
     spacing: 4px;
 }
 .switcher-list .thumbnail {
-    min-width: 15em;
-    min-height: 10em;
+    width 256px;
 }
 .switcher-list .separator {
     width: 1px;
