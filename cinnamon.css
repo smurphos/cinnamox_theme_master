@@ -263,8 +263,8 @@ StScrollBar StButton#hhandle:hover {
 }
 /* Switches (to be used in menus) */
 .toggle-switch {
-    width: 6em;
-    height: 2em;
+    width: 64px;
+    height: 22px;
 }
 .toggle-switch-us {
     background-image: url("toggle-off-us.svg");
@@ -455,8 +455,8 @@ StScrollBar StButton#hhandle:hover {
 
 .workspace-close-button {
     background-image: url("close-window.svg");
-    height: 34px;
-    width: 34px;
+    height: 32px;
+    width: 32px;
     -cinnamon-close-overlap: 20px;
 }
 
@@ -484,9 +484,9 @@ StScrollBar StButton#hhandle:hover {
 }
 .window-close {
     background-image: url("close-window.svg");
-    height: 3em;
-    width: 3em;
-    -cinnamon-close-overlap: 2em;
+    height: 32px;
+    width: 32px;
+    -cinnamon-close-overlap: 20px;
 }
 .window-close:rtl {
     -st-background-image-shadow: 2px 2px 6px rgba(0,0,0,0.5);
@@ -510,6 +510,8 @@ StScrollBar StButton#hhandle:hover {
     color: d8d7d7;
     transition-duration: 100;
     text-align: center;
+    height: 32px;
+    width: 32px;
 }
 .expo-background, .workspace-overview-background-shade {
 	background-gradient-direction: radial;
@@ -556,8 +558,8 @@ StScrollBar StButton#hhandle:hover {
 	text-align: center;
 }
 .calendar-change-month-back {
-    width: 1.8em;
-    height: 1.2em;
+    width: 16px;
+    height: 16px;
     background-image: url("calendar-arrow-left.svg");
     border-radius: 8px;
 }
@@ -571,8 +573,8 @@ StScrollBar StButton#hhandle:hover {
     background-color: #DARKBG;
 }
 .calendar-change-month-forward {
-    width: 18px;
-    height: 12px;
+    width: 16px;
+    height: 16px;
     background-image: url("calendar-arrow-right.svg");
     border-radius: 8px;
 }
@@ -791,8 +793,7 @@ StScrollBar StButton#hhandle:hover {
     spacing: 4px;
 }
 .switcher-list .thumbnail {
-    min-width: 15em;
-    min-height: 10em;
+    width 256px;
 }
 .switcher-list .separator {
     width: 1px;
@@ -1280,6 +1281,17 @@ StScrollBar StButton#hhandle:hover {
     background-color: #HIGHLIGHT;
     border: 1px solid #TEXT;
     border-radius: 12px;
+}
+.window-list-preview {
+    background-gradient-direction: horizontal;
+    background-gradient-start: #DARKBG;
+    background-gradient-end: #LIGHTBG;
+    border-radius: 12px;
+    border: 1px solid #TEXT;
+    padding: 8px;
+    spacing 4px;
+    font-size: 1em;
+    color: #TEXT;
 }
 
 /* ===================================================================
