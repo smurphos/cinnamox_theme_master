@@ -4,6 +4,7 @@
  * ###################################################################*/
 /* #THEMENAME */
 /* #VARIANT */
+/* #THEMEDESCRIPTION */
 stage {
     font-family: sans, sans-serif;
     font-size: 1em;
@@ -792,8 +793,7 @@ StScrollBar StButton#hhandle:hover {
     spacing: 4px;
 }
 .switcher-list .thumbnail {
-    min-width: 15em;
-    min-height: 10em;
+    width 256px;
 }
 .switcher-list .separator {
     width: 1px;
@@ -1281,6 +1281,17 @@ StScrollBar StButton#hhandle:hover {
     background-color: #HIGHLIGHT;
     border: 1px solid #TEXT;
     border-radius: 12px;
+}
+.window-list-preview {
+    background-gradient-direction: horizontal;
+    background-gradient-start: #DARKBG;
+    background-gradient-end: #LIGHTBG;
+    border-radius: 12px;
+    border: 1px solid #TEXT;
+    padding: 8px;
+    spacing 4px;
+    font-size: 1em;
+    color: #TEXT;
 }
 
 /* ===================================================================
