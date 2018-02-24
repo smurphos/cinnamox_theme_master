@@ -791,9 +791,10 @@ StScrollBar StButton#hhandle:hover {
 .switcher-list .thumbnail-box {
     padding: 2px;
     spacing: 4px;
+    color: #TEXT;
 }
 .switcher-list .thumbnail {
-    width 256px;
+    min-width: 20em;
 }
 .switcher-list .separator {
     width: 1px;
@@ -1094,14 +1095,14 @@ StScrollBar StButton#hhandle:hover {
     background-gradient-end: #LIGHTBG;
 }
 .menu-application-button {
-    padding 5px 7px;
+    padding: 5px 7px;
 }
 .menu-application-button:highlighted {
     /* This style is used in menu application buttons for applications which were newly installed */
     font-weight: bold;
 }
 .menu-application-button-selected {
-    padding 5px 7px;
+    padding: 5px 7px;
     background-gradient-direction: horizontal;
     background-gradient-start: #HIGHLIGHT;
     background-gradient-end: #LIGHTBG;
@@ -1119,15 +1120,15 @@ StScrollBar StButton#hhandle:hover {
     padding-right: 5px;
 }
 .menu-category-button {
-    padding 5px 7px;
+    padding: 5px 7px;
 }
 .menu-category-button-greyed {
-    padding 5px 7px;
+    padding: 5px 7px;
     color: #TEXT;
     font-style: italic;
 }
 .menu-category-button-selected {
-    padding 5px 7px;
+    padding: 5px 7px;
     background-gradient-direction: horizontal;
     background-gradient-start: #HIGHLIGHT;
     background-gradient-end: #LIGHTBG;
@@ -1229,7 +1230,7 @@ StScrollBar StButton#hhandle:hover {
     padding-bottom: 10px;
 }
 .window-list-box #appMenuIcon {
-    padding 1px;
+    padding: 1px;
 }
 .window-list-item-label {
     font-weight: bold;
@@ -1289,7 +1290,7 @@ StScrollBar StButton#hhandle:hover {
     border-radius: 12px;
     border: 1px solid #TEXT;
     padding: 8px;
-    spacing 4px;
+    spacing: 4px;
     font-size: 1em;
     color: #TEXT;
 }
@@ -1439,17 +1440,17 @@ StScrollBar StButton#hhandle:hover {
  * Panel Launchers Applet (panelLaunchers.js)
  * ===================================================================*/
 .panel-launchers {
-    padding 1px 4px;
+    padding: 1px 4px;
     spacing: 4px;
 }
 
 .panel-launchers.vertical {
-    padding 4px 1px;
+    padding: 4px 1px;
     spacing: 4px;
 }
 
 .launcher {
-    padding 1px;
+    padding: 1px;
     border-bottom-width: 1px;
     transition-duration: 300;
 }
@@ -1564,7 +1565,7 @@ StScrollBar StButton#hhandle:hover {
     color: #HIGHLIGHT;
 }
 .applet-box.vertical {
-    padding 3px 0px;
+    padding: 3px 0px;
 }
 .applet-box:highlight {
     background-color: #HIGHLIGHT;
