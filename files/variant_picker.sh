@@ -58,6 +58,7 @@ function zanah {
 function build_theme {
 	DESCRIPTION="$THEMENAME features $COLORDESC. Cinnamon, Metacity, GTK2, GTK3.18 and GTK3.22 themes are included along with a script to adjust the transparency of the Cinnamon theme.";
 	TARGETDIR="$HOME/Workspace/Theming/cinnamon_builds/$THEMENAME";
+	THEMEDIR="$HOME/.themes/$THEMENAME";
 	CURRENTDIR=$PWD;
 	cd;
 	rm -r "$TARGETDIR";
@@ -86,6 +87,7 @@ function build_theme {
 	sed -i "s/#THEMENAME/$THEMENAME/g" README.md;
 	sed -i "s/#THEMEDESCRIPTION/$DESCRIPTION/g" README.md;
 	cd "$CURRENTDIR";
+	rsync -a -u "$TARGETDIR"/ "$THEMEDIR";
 }
 
 VARIANT=("Build all" "Aubergine" "Gold-Spice" "Heather" "Kashmir-Blue" "Rhino" "Rosso-Cursa" "Willow-Grove" "Zanah");
