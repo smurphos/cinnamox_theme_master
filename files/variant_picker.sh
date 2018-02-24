@@ -62,7 +62,7 @@ function build_theme {
 	cd;
 	rm -r "$TARGETDIR";
 	rsync -a --exclude='.*' --exclude='variant_picker.sh' "$CURRENTDIR"/ "$TARGETDIR";
-	cd "$TARGETDIR";
+	cd "$TARGETDIR/cinnamon";
 	sed -i "s/#LIGHTBG/$LIGHTBG/g" cinnamon.css;
 	sed -i "s/#TEXT/$TEXT/g" cinnamon.css;
 	sed -i "s/#SELTEXT/$SELTEXT/g" cinnamon.css;
@@ -80,6 +80,7 @@ function build_theme {
 	sed -i "s/#MODTRANSDARKBG/$MODTRANSDARKBG/g" cinnamox_transparency.sh;
 	sed -i "s/#HIGHTRANSDARKBG/$HIGHTRANSDARKBG/g" cinnamox_transparency.sh;
 	sed -i "s/#THEMENAME/$THEMENAME/g" cinnamox_transparency.sh;
+	cd "$TARGETDIR";
 	sed -i "s/#THEMENAME/$THEMENAME/g" info.json;
 	sed -i "s/#THEMEDESCRIPTION/$DESCRIPTION/g" info.json;
 	sed -i "s/#THEMENAME/$THEMENAME/g" README.md;
