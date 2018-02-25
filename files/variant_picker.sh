@@ -64,28 +64,28 @@ function build_theme {
 	rm -r "$TARGETDIR";
 	rsync -a --exclude='.*' --exclude='variant_picker.sh' "$CURRENTDIR"/ "$TARGETDIR";
 	cd "$TARGETDIR/cinnamon";
-	sed -i "s/#LIGHTBG/$LIGHTBG/g" cinnamon.css;
-	sed -i "s/#TEXT/$TEXT/g" cinnamon.css;
-	sed -i "s/#SELTEXT/$SELTEXT/g" cinnamon.css;
-	sed -i "s/#DARKBG/$DARKBG/g" cinnamon.css;
-	sed -i "s/#HIGHLIGHT/$HIGHLIGHT/g" cinnamon.css;
-	sed -i "s/#THEMENAME/$THEMENAME/g" cinnamon.css;
-	sed -i "s/#VARIANT/No transparency/g" cinnamon.css;
-	sed -i "s/#THEMEDESCRIPTION/$DESCRIPTION/g" cinnamon.css;
-	sed -i "s/#LIGHTBG/$LIGHTBG/g" cinnamox_transparency.sh;
-	sed -i "s/#LOWTRANSLIGHTBG/$LOWTRANSLIGHTBG/g" cinnamox_transparency.sh;
-	sed -i "s/#MODTRANSLIGHTBG/$MODTRANSLIGHTBG/g" cinnamox_transparency.sh;
-	sed -i "s/#HIGHTRANSLIGHTBG/$HIGHTRANSLIGHTBG/g" cinnamox_transparency.sh;
-	sed -i "s/#DARKBG/$DARKBG/g" cinnamox_transparency.sh;
-	sed -i "s/#LOWTRANSDARKBG/$LOWTRANSDARKBG/g" cinnamox_transparency.sh;
-	sed -i "s/#MODTRANSDARKBG/$MODTRANSDARKBG/g" cinnamox_transparency.sh;
-	sed -i "s/#HIGHTRANSDARKBG/$HIGHTRANSDARKBG/g" cinnamox_transparency.sh;
-	sed -i "s/#THEMENAME/$THEMENAME/g" cinnamox_transparency.sh;
+	sed -i "s|#LIGHTBG|$LIGHTBG|g" cinnamon.css;
+	sed -i "s|#TEXT|$TEXT|g" cinnamon.css;
+	sed -i "s|#SELTEXT|$SELTEXT|g" cinnamon.css;
+	sed -i "s|#DARKBG|$DARKBG|g" cinnamon.css;
+	sed -i "s|#HIGHLIGHT|$HIGHLIGHT|g" cinnamon.css;
+	sed -i "s|#THEMENAME|$THEMENAME|g" cinnamon.css;
+	sed -i "s|#VARIANT|Transparency: None|g" cinnamon.css;
+	sed -i "s|#THEMEDESCRIPTION|$DESCRIPTION|g" cinnamon.css;
+	sed -i "s|#LIGHTBG|$LIGHTBG|g" cinnamox_transparency.sh;
+	sed -i "s|#LOWTRANSLIGHTBG|$LOWTRANSLIGHTBG|g" cinnamox_transparency.sh;
+	sed -i "s|#MODTRANSLIGHTBG|$MODTRANSLIGHTBG|g" cinnamox_transparency.sh;
+	sed -i "s|#HIGHTRANSLIGHTBG|$HIGHTRANSLIGHTBG|g" cinnamox_transparency.sh;
+	sed -i "s|#DARKBG|$DARKBG|g" cinnamox_transparency.sh;
+	sed -i "s|#LOWTRANSDARKBG|$LOWTRANSDARKBG|g" cinnamox_transparency.sh;
+	sed -i "s|#MODTRANSDARKBG|$MODTRANSDARKBG|g" cinnamox_transparency.sh;
+	sed -i "s|#HIGHTRANSDARKBG|$HIGHTRANSDARKBG|g" cinnamox_transparency.sh;
+	sed -i "s|#THEMENAME|$THEMENAME|g" cinnamox_transparency.sh;
 	cd "$TARGETDIR";
-	sed -i "s/#THEMENAME/$THEMENAME/g" info.json;
-	sed -i "s/#THEMEDESCRIPTION/$DESCRIPTION/g" info.json;
-	sed -i "s/#THEMENAME/$THEMENAME/g" README.md;
-	sed -i "s/#THEMEDESCRIPTION/$DESCRIPTION/g" README.md;
+	sed -i "s|#THEMENAME|$THEMENAME|g" info.json;
+	sed -i "s|#THEMEDESCRIPTION|$DESCRIPTION|g" info.json;
+	sed -i "s|#THEMENAME|$THEMENAME|g" README.md;
+	sed -i "s|#THEMEDESCRIPTION|$DESCRIPTION|g" README.md;
 	cd "$CURRENTDIR";
 	rsync -a -u "$TARGETDIR"/ "$THEMEDIR";
 }
@@ -117,6 +117,7 @@ do
     esac
     break
 done
+echo "";
 read -p "Press enter to exit the script.";
 cd;
 exit;

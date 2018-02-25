@@ -1079,20 +1079,20 @@ StScrollBar StButton#hhandle:hover {
 }
 /*.menu-applications-inner-box StScrollView is the App right click menu*/
 .menu-applications-inner-box, .menu-applications-inner-box StScrollView {
-    padding: 10px;
-    border-radius: 12px;
-    border: 1px solid #TEXT;
-    background-gradient-direction: vertical;
-    background-gradient-start: #DARKBG;
-    background-gradient-end: #LIGHTBG;
+  padding: 10px;
+  border-radius: 12px;
+  border: 1px solid #TEXT;
+  background-gradient-direction: vertical;
+  background-gradient-start: #DARKBG;
+  background-gradient-end: #LIGHTBG;
 }
 .menu-applications-outer-box {
-    padding: 10px;
-    border: 1px solid #TEXT;
-    border-radius: 12px;
-    background-gradient-direction: vertical;
-    background-gradient-start: #DARKBG;
-    background-gradient-end: #LIGHTBG;
+  padding: 10px;
+  border: 1px solid #TEXT;
+  border-radius: 12px;
+  background-gradient-direction: vertical;
+  background-gradient-start: #DARKBG;
+  background-gradient-end: #LIGHTBG;
 }
 .menu-application-button {
     padding: 5px 7px;
