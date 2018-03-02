@@ -77,7 +77,7 @@ function build_theme {
 	fi
 	cd;
 	rm -r "$TARGETDIR/$THEMENAME";
-	rsync -a --exclude='.*' --exclude='variant_picker.sh' --exclude='cinnamon_builds' "$CURRENTDIR"/ "$TARGETDIR/$THEMENAME";
+	rsync -a --exclude='.*' --exclude='cinnamox_cinnamon_picker.sh' --exclude='cinnamon_builds' "$CURRENTDIR"/ "$TARGETDIR/$THEMENAME";
 	cd "$TARGETDIR/$THEMENAME/cinnamon";
 	sed -i "s|#LIGHTBG|$LIGHTBG|g" cinnamon.css;
 	sed -i "s|#TEXT|$TEXT|g" cinnamon.css;
