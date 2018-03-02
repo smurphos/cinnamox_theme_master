@@ -4,9 +4,9 @@
 
 ## Credits
 
-Cinnamon theme handcrafted by smurphos.
+Cinnamon theme crafted by smurphos. Build tools are at [cinnamox_theme_master](https://github.com/smurphos/cinnamox_theme_master).
 
-GTK2, GTK3 and Metacity1 themes made with the assistance of the [Oomox](https://github.com/actionless/oomox) app.
+GTK2, GTK3 and Metacity1 themes built with [Cinnamox-gtk-theme](https://github.com/smurphos/cinnamox-gtk-theme) a fork of [Oomox-gtk-theme](https://github.com/actionless/oomox-gtk-theme).
 
 Menu in screenshots is the excellent [CinnVIIStarkMenu](https://cinnamon-spices.linuxmint.com/applets/view/281).
 
@@ -14,9 +14,9 @@ Icons in screenshots are from [Vibrancy Colours](http://www.ravefinity.com/p/vib
 
 ## Installation
 
-Install via Cinnamon's Themes app or download from Cinnamon Spices and unzip into your `~/.themes` directory.
+Install via Cinnamon's Themes module in Cinnamon settings or download from Cinnamon Spices and unzip into your `~/.themes` directory.
 
-Select the Cinnamox theme as your Desktop, Controls and Window Borders in the Cinnamon Themes app.
+Select the Cinnamox theme as your Desktop, Controls and Window Borders in the Cinnamon Themes module.
 
 To allow the GTK2, GTK3 and Metacity1 themes to apply to GUI apps running as root run this command in your terminal after installation to create symlinks to user themes in the system theme directory.
 
@@ -36,7 +36,7 @@ If you are not happy with the end result simply run `~/.themes/#THEMENAME/cinnam
 
 This theme is compatible with Cinnamon versions `3.2.x`, `3.4.x` & `3.6.x`
 
-The GTK3 themes require GTK `3.18.x` or `3.22.x`
+The GTK3 themes require GTK `3.18.x`, `3.20.x` or `3.22.x`
 
 The GTK2 theme requires the package `gtk2-engines-murrine` to be installed. This is a default package in Linux Mint.
 
