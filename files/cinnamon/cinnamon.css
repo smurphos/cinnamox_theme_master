@@ -459,7 +459,11 @@ StScrollBar StButton#hhandle:hover {
     width: 32px;
     -cinnamon-close-overlap: 20px;
 }
-
+.workspace-overview-background-shade {
+	background-gradient-direction: radial;
+	background-gradient-start: #ALWAYSTRANLBG;
+	background-gradient-end: #ALWAYSTRANDBG;
+}
 .workspace-thumbnail-indicator {
     outline: 2px solid white;
     border: 1px solid #888;
@@ -513,7 +517,7 @@ StScrollBar StButton#hhandle:hover {
     height: 32px;
     width: 32px;
 }
-.expo-background, .workspace-overview-background-shade {
+.expo-background {
 	background-gradient-direction: radial;
 	background-gradient-start: #LIGHTBG;
 	background-gradient-end: #DARKBG;
