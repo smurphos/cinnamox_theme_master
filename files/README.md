@@ -4,7 +4,7 @@
 
 ## Credits
 
-Cinnamon theme crafted by smurphos. Build tools are at [cinnamox_theme_master](https://github.com/smurphos/cinnamox_theme_master).
+Cinnamon theme crafted by smurphos. Build tools are at [Cinnamox_theme_master](https://github.com/smurphos/cinnamox_theme_master).
 
 GTK2, GTK3 and Metacity1 themes built with [Cinnamox-gtk-theme](https://github.com/smurphos/cinnamox-gtk-theme) a fork of [Oomox-gtk-theme](https://github.com/actionless/oomox-gtk-theme).
 
@@ -14,7 +14,9 @@ Icons in screenshots are from [Vibrancy Colours](http://www.ravefinity.com/p/vib
 
 ## Installation
 
-Install via Cinnamon's Themes module in Cinnamon settings or download from Cinnamon Spices and unzip into your `~/.themes` directory.
+Install via Cinnamon's Themes module in Cinnamon settings or download from [Cinnamon Spices](https://cinnamon-spices.linuxmint.com/themes) and unzip into your `~/.themes` directory.
+
+The themes are also available via [openDesktop.org](https://www.opendesktop.org/member/491875/) or [my Github repository](https://github.com/smurphos/cinnamox_themes/releases).
 
 Select the Cinnamox theme as your Desktop, Controls and Window Borders in the Cinnamon Themes module.
 

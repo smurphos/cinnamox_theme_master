@@ -65,7 +65,7 @@ function zanah {
 }
 function build_theme {
 	echo "Building $TARGETDIR";
-	DESCRIPTION="$THEMENAME features $COLORDESC. Cinnamon, Metacity, GTK2, GTK3.18 and GTK3.22 themes are included along with a script to adjust the transparency of the Cinnamon theme.";
+	DESCRIPTION="$THEMENAME features $COLORDESC. Cinnamon, Metacity, GTK2, GTK3.18 and GTK3.20+ themes are included along with a script to adjust the transparency of the Cinnamon theme.";
 	CURRENTDIR=$PWD;
 	TARGETDIR="$CURRENTDIR/cinnamon_builds";
 	THEMEDIR="$HOME/.themes";
