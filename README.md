@@ -30,21 +30,21 @@ function aubergine {
 And here are what the variables do. If making your own variety each value must be unique. Where relevant please note where the same value is used in the [Cinnamox-gtk-theme](https://github.com/smurphos/cinnamox-gtk-theme) colors definition file for matching GTK theme.
 
 ```
-LIGHTBG - the lighter background shade in the theme gradients. BG in [Cinnamox-gtk-theme](https://github.com/smurphos/cinnamox-gtk-theme).
-TEXT	- primary foreground text/applet color. FG in [Cinnamox-gtk-theme](https://github.com/smurphos/cinnamox-gtk-theme).
-SELTEXT - the foreground text/applet color for selected items (e.g. on menu hover). SEL_FG in [Cinnamox-gtk-theme](https://github.com/smurphos/cinnamox-gtk-theme).
-DARKBG  - the darker background shade in the theme gradients. MENU_BG in [Cinnamox-gtk-theme](https://github.com/smurphos/cinnamox-gtk-theme).
-HIGHLIGHT - the selection highlight color. SEL_BG in [Cinnamox-gtk-theme](https://github.com/smurphos/cinnamox-gtk-theme).
+LIGHTBG - the lighter background shade in the theme gradients. BG in Cinnamox-gtk-theme
+TEXT	- primary foreground text/applet color. FG in Cinnamox-gtk-theme
+SELTEXT - the foreground text/applet color for selected items (e.g. on menu hover). SEL_FG in Cinnamox-gtk-theme
+DARKBG  - the darker background shade in the theme gradients. MENU_BG in Cinnamox-gtk-theme
+HIGHLIGHT - the selection highlight color. SEL_BG in Cinnamox-gtk-theme
 
 ALWAYSTRANLBG - this is used for the expo/scale view - it should be a transparent version of LIGHTBG
 ALWAYSTRANDBG - this is used for the expo/scale view - it should be a transparent version of DARKBG
 
-LOWTRANSLIGHTBG - low transparency version of LIGHTBG used in `cinnamox_transparency.sh`
-MODTRANSLIGHTBG - medium transparency version of LIGHTBG used in `cinnamox_transparency.sh`
-HIGHTRANSLIGHTBG - high transparency version of LIGHTBG used in `cinnamox_transparency.sh`
-LOWTRANSDARKBG - low transparency version of DARKBG used in `cinnamox_transparency.sh`
-MODTRANSDARKBG - medium transparency version of DARKBG used in `cinnamox_transparency.sh`
-HIGHTRANSDARKBG - high transparency version of DARKBG used in `cinnamox_transparency.sh`
+LOWTRANSLIGHTBG - low transparency version of LIGHTBG used in cinnamox_transparency.sh
+MODTRANSLIGHTBG - medium transparency version of LIGHTBG used in cinnamox_transparency.sh
+HIGHTRANSLIGHTBG - high transparency version of LIGHTBG used in cinnamox_transparency.sh
+LOWTRANSDARKBG - low transparency version of DARKBG used in cinnamox_transparency.sh
+MODTRANSDARKBG - medium transparency version of DARKBG used in cinnamox_transparency.sh
+HIGHTRANSDARKBG - high transparency version of DARKBG used in cinnamox_transparency.sh
 
 THEMENAME - the name of the theme!
 COLORDESC - partial description string used to create the info.json and README.md
