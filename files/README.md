@@ -42,9 +42,9 @@ If you need HIDPI Support in GTK2 the theme includes a HIDPI version of the gtkr
 
 To run the script open a terminal window (Ctrl-Alt-T) and use the following command to make the script executable and launch it. 
 
-`chmod +x ~/.themes/$THEME_NAME/gtk-2.0/cinnamox_toggle_GTK2_HIDPI.sh && ~/.themes/$THEME_NAME/gtk-2.0/cinnamox_toggle_GTK2_HIDPI.sh`
+`chmod +x ~/.themes/#THEME_NAME/gtk-2.0/cinnamox_toggle_GTK2_HIDPI.sh && ~/.themes/#THEME_NAME/gtk-2.0/cinnamox_toggle_GTK2_HIDPI.sh`
 
-After the first run you can toggle between the two using `~/.themes/$THEME_NAME/gtk-2.0/cinnamox_toggle_GTK2_HIDPI.sh`
+After the first run you can toggle between the two using `~/.themes/#THEME_NAME/gtk-2.0/cinnamox_toggle_GTK2_HIDPI.sh`
 
 ### qt5ct support
 
@@ -52,7 +52,7 @@ If you need support for qt5ct configuration the theme includes a premade qt5ct.c
 
 To run the script open a terminal window (Ctrl-Alt-T) and use the following command to make the script executable and launch it. 
 
-`chmod +x ~/.themes/$THEME_NAME/qt5ct/cinnamox_enable_qt5ct.sh && ~/.themes/$THEME_NAME/qt5ct/cinnamox_enable_qt5ct.sh`
+`chmod +x ~/.themes/#THEME_NAME/qt5ct/cinnamox_enable_qt5ct.sh && ~/.themes/#THEME_NAME/qt5ct/cinnamox_enable_qt5ct.sh`
 
 ## Compatibility
 
