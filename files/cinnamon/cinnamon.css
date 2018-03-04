@@ -882,7 +882,7 @@ StScrollBar StButton#hhandle:hover {
 }
 .run-dialog-error-label {
     font-size: 1em;
-    color: #TEXT;
+    color: #ERRORTXT;
 }
 .run-dialog-error-box {
     padding-top: 15px;
@@ -1595,10 +1595,10 @@ StScrollBar StButton#hhandle:hover {
     spacing: 0px;
 }
 .system-status-icon.warning {
-    color: #FFC600;
+    color: #WARNINGTXT;
 }
 .system-status-icon.error {
-    color: #FF0000;
+    color: #ERRORTXT;
 }
 /*Used by keyboard applet*/
 .panel-status-button {
