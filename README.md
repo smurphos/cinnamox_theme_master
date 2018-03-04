@@ -13,7 +13,7 @@ The current release version of the themes can be downloaded and installed via Ci
 
 All Cinnamox themes are built from the base `cinnamon.css` template included in this repository via replacement of `#place-holders` with hexadecimal color codes.
 
-`cinnamox_cinnamon_picker.sh` is the interactive script that conducts the build. It also creates the `info.json`, `README.md` and `cinnamox_transparency.sh` script. It includes a function for each Cinnamox variety. So to create another colour variation the easiest way is to create a new function with the color codes required and reference it in the choices dialogue. A little bit of bash knoweldge is required. If you just want to change other elements of the theme work on the `cinnamon.css` template directly
+`cinnamox_cinnamon_picker.sh` is the interactive script that conducts the build. It also creates the `info.json`, `README.md` and the `cinnamox_transparency.sh` script. It includes a function for each Cinnamox variety which define the color codes used in the replacement. So to create another colour variation the easiest way is to create a new function with the color codes required and reference it in the choices dialogue. A little bit of bash knowledge is required. If you want to change other elements of the theme other than the color work on the `cinnamon.css` template directly.
 
 As an example here is the function for Cinnamox-Aubergine
 
@@ -23,18 +23,21 @@ function aubergine {
 	LOWTRANSLIGHTBG="rgba(119, 33, 111, 0.8)"; MODTRANSLIGHTBG="rgba(119, 33, 111, 0.65)"; HIGHTRANSLIGHTBG="rgba(119, 33, 111, 0.5)";
 	LOWTRANSDARKBG="rgba(44, 0, 30, 0.9)"; MODTRANSDARKBG="rgba(44, 0, 30, 0.75)"; HIGHTRANSDARKBG="rgba(44, 0, 30, 0.6)";
 	ALWAYSTRANLBG="rgba(119, 33, 111, 0.4)"; ALWAYSTRANDBG="rgba(44, 0, 30, 0.5)";
+	WARNINGTXT="#e9dd00"; ERRORTXT="#e92041";
 	THEMENAME="Cinnamox-Aubergine"; COLORDESC="a deep purple colour scheme and light text";
 	build_theme;
 }
 ```
-And here are what the variables do. If making your own variety each value must be unique. Where relevant please note where the same value is used in the [Cinnamox-gtk-theme](https://github.com/smurphos/cinnamox-gtk-theme) colors definition file for matching GTK theme.
+And here are what the variables do. If making your own colour variant each value must be unique. Where relevant please note where the same value is used in the [Cinnamox-gtk-theme colors files](https://github.com/smurphos/cinnamox-gtk-theme/tree/master/test/colors) for the matching GTK theme.
 
 ```
-LIGHTBG - the lighter background shade in the theme gradients. BG in Cinnamox-gtk-theme
-TEXT	- primary foreground text/applet color. FG in Cinnamox-gtk-theme
-SELTEXT - the foreground text/applet color for selected items (e.g. on menu hover). SEL_FG in Cinnamox-gtk-theme
-DARKBG  - the darker background shade in the theme gradients. MENU_BG in Cinnamox-gtk-theme
-HIGHLIGHT - the selection highlight color. SEL_BG in Cinnamox-gtk-theme
+LIGHTBG - the lighter background shade in the theme gradients. BG in Cinnamox-gtk-theme colors definition
+TEXT	- primary foreground text/applet color. FG in Cinnamox-gtk-theme colors definition
+SELTEXT - the foreground text/applet color for selected items (e.g. on menu hover). SEL_FG in Cinnamox-gtk-theme colors definition
+DARKBG  - the darker background shade in the theme gradients. MENU_BG in Cinnamox-gtk-theme colors definition
+HIGHLIGHT - the selection highlight color. SEL_BG in Cinnamox-gtk-theme colors definition
+WARNINGTXT - used in cinnamon for the power applet as a low battery indicator. TERMINAL_COLOR11 in Cinnamox-gtk-theme colors definition 
+ERRORTXT - used in cinnamon for the power applet as a critical battery indicator. TERMINAL_COLOR9 in Cinnamox-gtk-theme colors definition
 
 ALWAYSTRANLBG - this is used for the expo/scale view - it should be a transparent version of LIGHTBG
 ALWAYSTRANDBG - this is used for the expo/scale view - it should be a transparent version of DARKBG
