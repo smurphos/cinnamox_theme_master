@@ -64,20 +64,21 @@ StScrollBar StButton#hhandle:hover {
   transition-duration: 100;
 }
 .separator {
-    -gradient-height: 2px;
-    -gradient-start: rgba(85,85,85,1);
-    -gradient-end: #555555;
-    -margin-horizontal: 1.5em;
+    -gradient-height: 3px;
+    -gradient-start: #TEXT;
+    -gradient-end: #DARKBG;
+    -margin-horizontal: 1em;
     height: 1em;
 }
 .slider {
     height: 1em;
     min-width: 15em;
-    -slider-height: 0.3em;
-    -slider-background-color: #666666;
-    -slider-border-color: #555555;
-    -slider-active-background-color: #CCCCCC;
-    -slider-active-border-color: #DDDDDD;
+    color: #TEXT;
+    -slider-height: 0.5em;
+    -slider-background-color: #DARKBG;
+    -slider-border-color: #TEXT;
+    -slider-active-background-color: #HIGHLIGHT;
+    -slider-active-border-color: #TEXT;
     -slider-border-width: 1px;
     -slider-handle-radius: 0.5em;
 }
@@ -147,19 +148,11 @@ StScrollBar StButton#hhandle:hover {
     -arrow-rise: 11px;
 }
 .menu, .popup-menu {
-  padding: 10px;
-  border: 1px solid #TEXT;
-  border-radius: 12px;
-  background-gradient-direction: horizontal;
-  background-gradient-start: #DARKBG;
-  background-gradient-end: #LIGHTBG;
-  color: #TEXT;
-  font-size: 1em;
   min-width: 100px;
   margin: 0.2em;
 }
-/*Scale view right click menu*/
-.popup-combo-menu {
+/*.popup-combo-menu is for the scale view right click menu*/
+.menu, .popup-menu, .popup-combo-menu {
   padding: 10px;
   border: 1px solid #TEXT;
   border-radius: 12px;
@@ -241,14 +234,16 @@ StScrollBar StButton#hhandle:hover {
 .popup-slider-menu-item {
     height: 1em;
     min-width: 15em;
-    -slider-height: 0.3em;
-    -slider-background-color: #666666;
-    -slider-border-color: #555555;
-    -slider-active-background-color: #CCCCCC;
-    -slider-active-border-color: #DDDDDD;
+    color: #TEXT;
+    -slider-height: 0.5em;
+    -slider-background-color: #DARKBG;
+    -slider-border-color: #TEXT;
+    -slider-active-background-color: #HIGHLIGHT;
+    -slider-active-border-color: #TEXT;
     -slider-border-width: 1px;
-    -slider-handle-radius: 0.5em;
+    -slider-handle-radius: .5em;
 }
+/* used in power applet */
 .popup-device-menu-item {
     spacing: .5em;
 }
@@ -905,7 +900,7 @@ StScrollBar StButton#hhandle:hover {
     padding: 15px 20px;
 }
 .lightbox {
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: #ALWAYSTRANDBG;
 }
 
 /* CinnamonMountOperation Dialogs */
@@ -1329,14 +1324,12 @@ StScrollBar StButton#hhandle:hover {
 }
 
 .sound-player .slider {
-    height: 0.5em;
-    -slider-height: 0.5em;
+    height: 1em;
+    min-width: 15em;
+    color: #TEXT;
     -slider-background-color: #DARKBG;
-    -slider-border-color: #TEXT;
     -slider-active-background-color: #HIGHLIGHT;
-    -slider-active-border-color: #TEXT;
-    -slider-border-width: 1px;
-    -slider-handle-radius: 5px;
+    -slider-handle-radius: 0.5em;
 }
 
 .sound-player StBoxLayout {
@@ -1845,7 +1838,7 @@ StScrollBar StButton#hhandle:hover {
 }
 
 .flashspot {
-    background-color: white;
+    background-color: #HIGHLIGHT;
 }
 
 /* Media keys OSD popup */
@@ -1873,14 +1866,14 @@ StScrollBar StButton#hhandle:hover {
 
 .tile-preview,
 .tile-hud {
-    background-color: rgba(85, 85, 85, 0.5);
-    border: 2px solid rgba(134, 134, 134, 0.8);
+    background-color: #ALWAYSTRANDBG;
+    border: 2px solid #TEXT;
 }
 
 .tile-preview.snap,
 .tile-hud.snap {
-    background-color: rgba(134, 134, 170, 0.5);
-    border: 2px solid rgba(85, 85, 85, 0.8);
+    background-color: #ALWAYSTRANDBG;
+    border: 2px solid #HIGHLIGHT;
 }
 
 .tile-hud:top {
