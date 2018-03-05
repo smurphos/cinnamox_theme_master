@@ -10,7 +10,7 @@ stage {
     font-size: 1em;
 }
 .cinnamon-link {
-    color: #TEXT;
+    color: #LINKTXT;
     text-decoration: underline;
 }
 .cinnamon-link:hover {
