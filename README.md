@@ -23,7 +23,7 @@ function aubergine {
 	LOWTRANSLIGHTBG="rgba(119, 33, 111, 0.8)"; MODTRANSLIGHTBG="rgba(119, 33, 111, 0.65)"; HIGHTRANSLIGHTBG="rgba(119, 33, 111, 0.5)";
 	LOWTRANSDARKBG="rgba(44, 0, 30, 0.9)"; MODTRANSDARKBG="rgba(44, 0, 30, 0.75)"; HIGHTRANSDARKBG="rgba(44, 0, 30, 0.6)";
 	ALWAYSTRANLBG="rgba(119, 33, 111, 0.4)"; ALWAYSTRANDBG="rgba(44, 0, 30, 0.5)";
-	WARNINGTXT="#e9dd00"; ERRORTXT="#e92041";
+	WARNINGTXT="#e9dd00"; ERRORTXT="#e92041"; LINKTXT="#f2a9ec";
 	THEMENAME="Cinnamox-Aubergine"; COLORDESC="a deep purple colour scheme and light text";
 	build_theme;
 }
@@ -38,6 +38,7 @@ DARKBG  - the darker background shade in the theme gradients. MENU_BG in Cinnamo
 HIGHLIGHT - the selection highlight color. SEL_BG in Cinnamox-gtk-theme colors definition
 WARNINGTXT - used in cinnamon for the power applet as a low battery indicator. TERMINAL_COLOR11 in Cinnamox-gtk-theme colors definition 
 ERRORTXT - used in cinnamon for the power applet as a critical battery indicator. TERMINAL_COLOR9 in Cinnamox-gtk-theme colors definition
+LINKTXT - hyperlink text color. TERMINAL_COLOR4 in Cinnamox-gtk-theme colors definition
 
 ALWAYSTRANLBG - this is used for the expo/scale view - it should be a transparent version of LIGHTBG
 ALWAYSTRANDBG - this is used for the expo/scale view - it should be a transparent version of DARKBG
