@@ -22,7 +22,7 @@ function heather {
 	LOWTRANSLIGHTBG="rgba(183, 196, 204, 0.8)"; MODTRANSLIGHTBG="rgba(183, 196, 204, 0.65)"; HIGHTRANSLIGHTBG="rgba(183, 196, 204, 0.5)";
 	LOWTRANSDARKBG="rgba(114, 160, 191, 0.9)"; MODTRANSDARKBG="rgba(114, 160, 191, 0.75)"; HIGHTRANSDARKBG="rgba(114, 160, 191, 0.6)";
     ALWAYSTRANLBG="rgba(183, 196, 204, 0.4)"; ALWAYSTRANDBG="rgba(114, 160, 191, 0.5)";
-    WARNINGTXT="#cecd93"; ERRORTXT="#ce7575"; LINKTXT="#243d4c";
+    WARNINGTXT="#b2b059"; ERRORTXT="#b25959"; LINKTXT="#243d4c";
 	THEMENAME="Cinnamox-Heather"; COLORDESC="a pale blue colour scheme and dark text";
 	build_theme;
 }
@@ -67,7 +67,7 @@ function zanah {
 	LOWTRANSLIGHTBG="rgba(183, 204, 185, 0.8)"; MODTRANSLIGHTBG="rgba(183, 204, 185, 0.65)"; HIGHTRANSLIGHTBG="rgba(183, 204, 185, 0.5)";
 	LOWTRANSDARKBG="rgba(114, 191, 120, 0.9)"; MODTRANSDARKBG="rgba(114, 191, 120, 0.75)"; HIGHTRANSDARKBG="rgba(114, 191, 120, 0.6)";
     ALWAYSTRANLBG="rgba(183, 204, 185, 0.4)"; ALWAYSTRANDBG="rgba(114, 191, 120, 0.5)";
-	WARNINGTXT="#eeee47"; ERRORTXT="#ce6f6f"; LINKTXT="#244c27";
+	WARNINGTXT="#b2b259"; ERRORTXT="#b25959"; LINKTXT="#244c27";
 	THEMENAME="Cinnamox-Zanah"; COLORDESC="a pale blue colour scheme and dark text";
 	build_theme;
 }
