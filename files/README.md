@@ -67,3 +67,10 @@ Tested on Linux Mint `18.2` & `18.3` 64bit with Cinnamon `3.4.x`, `3.6.x`, Manja
 ## Changelog & Previous Releases
 
 See [my Github repository](https://github.com/smurphos/cinnamox_themes/releases)
+
+## Additional Screenshots
+
+![#THEMENAME](https://github.com/smurphos/cinnamox_themes/raw/master/Screenshots/#THEMESHORT-menu.png "#THEMENAME")
+![#THEMENAME](https://github.com/smurphos/cinnamox_themes/raw/master/Screenshots/#THEMESHORT-calendar.png "#THEMENAME")
+![#THEMENAME](https://github.com/smurphos/cinnamox_themes/raw/master/Screenshots/#THEMESHORT-GTK.png  "#THEMENAME")
+![#THEMENAME](https://github.com/smurphos/cinnamox_themes/raw/master/Screenshots/#THEMESHORT-trans.png  "#THEMENAME")

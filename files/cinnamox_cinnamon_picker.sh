@@ -5,7 +5,7 @@ function aubergine {
 	LOWTRANSDARKBG="rgba(44, 0, 30, 0.9)"; MODTRANSDARKBG="rgba(44, 0, 30, 0.75)"; HIGHTRANSDARKBG="rgba(44, 0, 30, 0.6)";
 	ALWAYSTRANLBG="rgba(119, 33, 111, 0.4)"; ALWAYSTRANDBG="rgba(44, 0, 30, 0.5)";
 	WARNINGTXT="#e9dd00"; ERRORTXT="#e92041"; LINKTXT="#f2a9ec";
-	THEMENAME="Cinnamox-Aubergine"; COLORDESC="a deep purple colour scheme and light text";
+	THEMENAME="Cinnamox-Aubergine"; COLORDESC="a deep purple colour scheme and light text"; THEMESHORT="Aubergine";
 	build_theme;
 }
 function goldspice {
@@ -14,7 +14,7 @@ function goldspice {
 	LOWTRANSDARKBG="rgba(56, 34, 24, 0.9)"; MODTRANSDARKBG="rgba(56, 34, 24, 0.75)"; HIGHTRANSDARKBG="rgba(56, 34, 24, 0.6)";
     ALWAYSTRANLBG="rgba(153, 70, 30, 0.4)"; ALWAYSTRANDBG="rgba(56, 34, 24, 0.5)";
 	WARNINGTXT="#e5e500"; ERRORTXT="#e50026"; LINKTXT="#f2c1a9";
-	THEMENAME="Cinnamox-Gold-Spice"; COLORDESC="a golden orange colour scheme and light text";
+	THEMENAME="Cinnamox-Gold-Spice"; COLORDESC="a golden orange colour scheme and light text"; THEMESHORT="Gold-Spice";
 	build_theme;
 }
 function heather {
@@ -23,7 +23,7 @@ function heather {
 	LOWTRANSDARKBG="rgba(114, 160, 191, 0.9)"; MODTRANSDARKBG="rgba(114, 160, 191, 0.75)"; HIGHTRANSDARKBG="rgba(114, 160, 191, 0.6)";
     ALWAYSTRANLBG="rgba(183, 196, 204, 0.4)"; ALWAYSTRANDBG="rgba(114, 160, 191, 0.5)";
     WARNINGTXT="#b2b059"; ERRORTXT="#b25959"; LINKTXT="#243d4c";
-	THEMENAME="Cinnamox-Heather"; COLORDESC="a pale blue colour scheme and dark text";
+	THEMENAME="Cinnamox-Heather"; COLORDESC="a pale blue colour scheme and dark text"; THEMESHORT="Heather";
 	build_theme;
 }
 function kashmirblue {
@@ -32,7 +32,7 @@ function kashmirblue {
 	LOWTRANSDARKBG="rgba(40, 52, 58, 0.9)"; MODTRANSDARKBG="rgba(40, 52, 58, 0.75)"; HIGHTRANSDARKBG="rgba(40, 52, 58, 0.6)";
     ALWAYSTRANLBG="rgba(87, 117, 132, 0.4)"; ALWAYSTRANDBG="rgba(40, 52, 58, 0.5)";
 	WARNINGTXT="#a1a144"; ERRORTXT="#a13434"; LINKTXT="#a9d9f2";
-	THEMENAME="Cinnamox-Kashmir-Blue"; COLORDESC="a soothing blue colour scheme and light text";
+	THEMENAME="Cinnamox-Kashmir-Blue"; COLORDESC="a soothing blue colour scheme and light text"; THEMESHORT="Kashmir-Blue";
 	build_theme;
 }
 function rhino {
@@ -41,7 +41,7 @@ function rhino {
 	LOWTRANSDARKBG="rgba(28, 33, 38, 0.9)"; MODTRANSDARKBG="rgba(28, 33, 38, 0.75)"; HIGHTRANSDARKBG="rgba(28, 33, 38, 0.6)";
     ALWAYSTRANLBG="rgba(67, 78, 90, 0.4)"; ALWAYSTRANDBG="rgba(28, 33, 38, 0.5)";
 	WARNINGTXT="#d8d84e"; ERRORTXT="#a06060"; LINKTXT="#a9cdf2";
-	THEMENAME="Cinnamox-Rhino"; COLORDESC="a deep grey colour scheme and light text";
+	THEMENAME="Cinnamox-Rhino"; COLORDESC="a deep grey colour scheme and light text"; THEMESHORT="Rhino";
 	build_theme;
 }
 function rossocursa {
@@ -50,7 +50,7 @@ function rossocursa {
 	LOWTRANSDARKBG="rgba(76, 0, 0, 0.9)"; MODTRANSDARKBG="rgba(76, 0, 0, 0.75)"; HIGHTRANSDARKBG="rgba(76, 0, 0, 0.6)";
     ALWAYSTRANLBG="rgba(204, 0, 0, 0.4)"; ALWAYSTRANDBG="rgba(76, 0, 0, 0.5)";
 	WARNINGTXT="#cccc00"; ERRORTXT="#cc009c"; LINKTXT="#f2a9a9";
-	THEMENAME="Cinnamox-Rosso-Cursa"; COLORDESC="an exciting red colour scheme and light text";
+	THEMENAME="Cinnamox-Rosso-Cursa"; COLORDESC="an exciting red colour scheme and light text"; THEMESHORT="Rosso-Cursa";
 	build_theme;
 }
 function willowgrove {
@@ -59,7 +59,7 @@ function willowgrove {
 	LOWTRANSDARKBG="rgba(68, 76, 61, 0.9)"; MODTRANSDARKBG="rgba(68, 76, 61, 0.75)"; HIGHTRANSDARKBG="rgba(68, 76, 61, 0.6)";
     ALWAYSTRANLBG="rgba(111, 127, 95, 0.4)"; ALWAYSTRANDBG="rgba(68, 76, 61, 0.5)";
 	WARNINGTXT="#aaaa3a"; ERRORTXT="#aa4e4e"; LINKTXT="#cdf2a9";
-	THEMENAME="Cinnamox-Willow-Grove"; COLORDESC="a soothing green colour scheme and light text";
+	THEMENAME="Cinnamox-Willow-Grove"; COLORDESC="a soothing green colour scheme and light text"; THEMESHORT="Willow-Grove";
 	build_theme;
 }
 function zanah {
@@ -68,7 +68,7 @@ function zanah {
 	LOWTRANSDARKBG="rgba(114, 191, 120, 0.9)"; MODTRANSDARKBG="rgba(114, 191, 120, 0.75)"; HIGHTRANSDARKBG="rgba(114, 191, 120, 0.6)";
     ALWAYSTRANLBG="rgba(183, 204, 185, 0.4)"; ALWAYSTRANDBG="rgba(114, 191, 120, 0.5)";
 	WARNINGTXT="#b2b259"; ERRORTXT="#b25959"; LINKTXT="#244c27";
-	THEMENAME="Cinnamox-Zanah"; COLORDESC="a pale blue colour scheme and dark text";
+	THEMENAME="Cinnamox-Zanah"; COLORDESC="a pale blue colour scheme and dark text"; THEMESHORT="Zanah";
 	build_theme;
 }
 function build_theme {
@@ -114,6 +114,7 @@ function build_theme {
 	sed -i "s|#THEMEDESCRIPTION|$DESCRIPTION|g" info.json;
 	sed -i "s|#THEMENAME|$THEMENAME|g" README.md;
 	sed -i "s|#THEMEDESCRIPTION|$DESCRIPTION|g" README.md;
+	sed -i "s|#THEMESHORT|$THEMESHORT|g" README.md;
 	cd "$CURRENTDIR";
 	echo "Moving from $TARGETDIR to $THEMEDIR";
 	rsync -a -u "$TARGETDIR/$THEMENAME"/ "$THEMEDIR/$THEMENAME";
