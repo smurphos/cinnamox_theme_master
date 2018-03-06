@@ -20,7 +20,9 @@ stage {
     color: rgba(0,0,0,0.5);
 }
 StScrollBar {
-    padding: 0px;
+    padding: 2px;
+    min-width: 1em;
+    min-height: 1em;
 }
 StScrollView.vfade {
     -st-vfade-offset: 68px;
@@ -29,12 +31,8 @@ StScrollView.vfade {
 StScrollView.hfade {
     -st-hfade-offset: 68px;
 }
-
 StScrollView StScrollBar {
-    min-width: 1em;
-    min-height: 5em;
 }
-
 StScrollBar StBin#trough {
     background-color: rgba(0,0,0,0);
     border-radius: 4px;
@@ -86,7 +84,7 @@ StScrollBar StButton#vhandle:hover, StScrollBar StButton#hhandle:hover {
   padding: 10px;
   border: 1px solid #TEXT;
   border-radius: 12px;
-  background-gradient-direction: horizontal;
+  background-gradient-direction: vertical;
   background-gradient-start: #DARKBG;
   background-gradient-end: #LIGHTBG;
   font-size: 1em;
@@ -97,7 +95,7 @@ StScrollBar StButton#vhandle:hover, StScrollBar StButton#hhandle:hover {
 .notification-button:hover,
 .notification-icon-button:hover, .modal-dialog-button:hover,
 .sound-player-overlay StButton:hover {
-  background-gradient-direction: horizontal;
+  background-gradient-direction: vertical;
   background-gradient-start: #DARKBG;
   background-gradient-end: #HIGHLIGHT;
   color: #SELTEXT;
@@ -106,7 +104,7 @@ StScrollBar StButton#vhandle:hover, StScrollBar StButton#hhandle:hover {
 .notification-icon-button:focus,
 .modal-dialog-button:focus,
 .sound-player-overlay StButton:focus {
-  background-gradient-direction: horizontal;
+  background-gradient-direction: vertical;
   background-gradient-start: #DARKBG;
   background-gradient-end: #HIGHLIGHT;
   color: #SELTEXT;
@@ -114,8 +112,8 @@ StScrollBar StButton#vhandle:hover, StScrollBar StButton#hhandle:hover {
 .notification-button:active, .notification-icon-button:active,
 .modal-dialog-button:active, .modal-dialog-button:pressed,
 .sound-player-overlay StButton:active {
-    background-gradient-start: rgba(255, 255, 255, 0);
-    background-gradient-end: rgba(255, 255, 255, 0.2);
+  background-color: #HIGHLIGHT;
+  color: #SELTEXT;
 }
 /* ===================================================================
  * PopupMenu (popupMenu.js)
@@ -702,8 +700,6 @@ StScrollBar StButton#vhandle:hover, StScrollBar StButton#hhandle:hover {
     border-radius: 8px;
     color: #TEXT;
     transition-duration: 300;
-    caret-color: #a8a8a8;
-    caret-size: 1px;
 }
 #notification StEntry:focus {
     border: 1px solid  #TEXT;
@@ -711,8 +707,10 @@ StScrollBar StButton#vhandle:hover, StScrollBar StButton#hhandle:hover {
     background-gradient-direction: horizontal;
     background-gradient-start: #DARKBG;
     background-gradient-end: #LIGHTBG;
-    caret-color: #545454;
-    selection-background-color: #808080;
+    selection-background-color: #HIGHLIGHT;
+    selected-color: #SELTEXT;
+    caret-color: #TEXT;
+    caret-size: 1em;
 }
 /* ===================================================================
  * Alt Tab
@@ -805,7 +803,7 @@ StScrollBar StButton#vhandle:hover, StScrollBar StButton#hhandle:hover {
     font-size: 1em;
     border: 1px solid #TEXT;
     border-radius: 12px;
-    background-gradient-direction: vertical;
+    background-gradient-direction: horizontal;
     background-gradient-start: #DARKBG;
     background-gradient-end: #LIGHTBG;
     color: #TEXT;
@@ -819,7 +817,7 @@ StScrollBar StButton#vhandle:hover, StScrollBar StButton#hhandle:hover {
     padding: 10px;
     border: 1px solid  #TEXT;
     border-radius: 12px;
-    background-gradient-direction: horizontal;
+    background-gradient-direction: vertical;
     background-gradient-start: #DARKBG;
     background-gradient-end: #LIGHTBG;
     margin-left: 10px;
@@ -842,8 +840,8 @@ StScrollBar StButton#vhandle:hover, StScrollBar StButton#hhandle:hover {
    background-gradient-start: #DARKBG;
    background-gradient-end: #LIGHTBG;
    color: #TEXT;
-    padding: 20px;
-    text-align: center;
+   padding: 20px;
+   text-align: center;
 }
 
 /* ===================================================================
@@ -910,7 +908,7 @@ StScrollBar StButton#vhandle:hover, StScrollBar StButton#hhandle:hover {
 .show-processes-dialog-description,
 .mount-question-dialog-description {
     font-size: 1em;
-    color: white;
+    color: #TEXT;
     padding-left: 17px;
     width: 28em;
 }
@@ -930,10 +928,10 @@ StScrollBar StButton#vhandle:hover, StScrollBar StButton#hhandle:hover {
     padding-left: 32px;
 }
 .show-processes-dialog-app-list-item {
-    color: #ccc;
+    color: #TEXT;
 }
 .show-processes-dialog-app-list-item:hover {
-    color: white;
+    color: #TEXT;
 }
 .show-processes-dialog-app-list-item:ltr {
     padding-right: 1em;
@@ -1152,11 +1150,12 @@ StScrollBar StButton#vhandle:hover, StScrollBar StButton#hhandle:hover {
 #menu-search-entry {
     padding: 2px;
     border-radius: 12px;
-    color: #SELTEXT;
+    color: #TEXT;
     border: 1px solid #TEXT;
-    background-color: #HIGHLIGHT;
-    selected-color: #TEXT;
-    caret-color: #SELTEXT;
+    background-color: #DARKBG;
+    selection-background-color: #HIGHLIGHT;
+    selected-color: #SELTEXT;
+    caret-color: #TEXT;
     caret-size: 1px;
     width: 250px;
     height: 1.5em;
@@ -1171,7 +1170,7 @@ StScrollBar StButton#vhandle:hover, StScrollBar StButton#hhandle:hover {
 }
 .menu-search-entry-icon {
     icon-size: 1em;
-    color: #SELTEXT;
+    color: #TEXT;
 }
 /* Context menu (at the moment only for favorites) */
 .menu-context-menu {
@@ -1452,17 +1451,17 @@ StScrollBar StButton#vhandle:hover, StScrollBar StButton#hhandle:hover {
 .panel-launcher-add-dialog-entry {
     padding: 5px;
     border-radius: 4px;
-    color: rgb(128, 128, 128);
-    border: 2px solid rgba(245,245,245,0.2);
-    background-gradient-start: rgba(5,5,6,0.1);
-    background-gradient-end: rgba(254,254,254,0.1);
+    color: #TEXT;
+    border: 1px SOLID #TEXT;
     background-gradient-direction: vertical;
-    selected-color: black;
-    caret-color: rgb(128, 128, 128);
+    background-gradient-start: #DARKBG;
+    background-gradient-end: #LIGHTBG;
+    selection-background-color: #HIGHLIGHT;
+    selected-color: #SELTEXT;
+    caret-color: #TEXT;
     caret-size: 1px;
     width: 250px;
     transition-duration: 300;
-    box-shadow: inset 0px 2px 4px rgba(0,0,0,0.6);
 }
 
 .panel-launcher-add-dialog-entry:focus,
@@ -1572,7 +1571,6 @@ StScrollBar StButton#vhandle:hover, StScrollBar StButton#hhandle:hover {
 .user-box {
 	padding: 0.4em 1.3em;
 	spacing: 10px;
-	border: 0px solid rgba(0, 0, 0, 0);
 }
 
 .user-icon {
@@ -1595,9 +1593,9 @@ StScrollBar StButton#vhandle:hover, StScrollBar StButton#hhandle:hover {
 }
 
 .desklet-with-borders {
+  color: #TEXT;
   padding: 10px;
   border: 1px solid #TEXT;
-  border-radius: 12px;
   background-gradient-direction: horizontal;
   background-gradient-start: #DARKBG;
   background-gradient-end: #LIGHTBG;
@@ -1608,9 +1606,9 @@ StScrollBar StButton#vhandle:hover, StScrollBar StButton#hhandle:hover {
 }
 
 .desklet-with-borders-and-header {
+  color: #TEXT;
   padding: 10px;
   border: 1px solid #TEXT;
-  border-radius: 12px;
   background-gradient-direction: horizontal;
   background-gradient-start: #DARKBG;
   background-gradient-end: #LIGHTBG;
@@ -1625,15 +1623,15 @@ StScrollBar StButton#vhandle:hover, StScrollBar StButton#hhandle:hover {
   font-size: 1.2em;
   padding: 10px;
   border: 1px solid #TEXT;
-  border-radius: 8px;
   background-gradient-direction: horizontal;
   background-gradient-start: #DARKBG;
   background-gradient-end: #LIGHTBG; 
 }
 
 .desklet-drag-placeholder {
-    border: 2px solid #6daa00;
-    background-color: rgba(109,170, 0, 0.3);
+    border: 2px solid #HIGHLIGHT;
+    background-color: #ALWAYSTRANSDBG;
+    border-radius: 12px;
 }
 
 .photoframe-box {
@@ -1708,7 +1706,7 @@ StScrollBar StButton#vhandle:hover, StScrollBar StButton#hhandle:hover {
     color: #TEXT;
     font-weight: bold;
     font-size: 1.5em;
-    background-gradient-direction: vertical;
+    background-gradient-direction: horizontal;
     background-gradient-start: #DARKBG;
     background-gradient-end: #LIGHTBG;
 }
@@ -1720,6 +1718,8 @@ StScrollBar StButton#vhandle:hover, StScrollBar StButton#hhandle:hover {
   background-gradient-direction: horizontal;
   background-gradient-start: #DARKBG;
   background-gradient-end: #LIGHTBG;
+  selected-color: #SELTEXT;
+  selection-background-color: #HIGHLIGHT;
   color: #TEXT;
   min-width: 10em;
   height: 1.5em;
@@ -1727,17 +1727,21 @@ StScrollBar StButton#vhandle:hover, StScrollBar StButton#hhandle:hover {
 }
 
 .expo-workspaces-name-entry#selected {
-     font-weight: bold;
-     color: #SELTEXT;
-     background-gradient-direction: horizontal;
-	 background-gradient-start: #HIGHLIGHT;
-	 background-gradient-end: #LIGHTBG;
+  color: #SELTEXT;
+  background-gradient-direction: horizontal;
+  background-gradient-start: #HIGHLIGHT;
+  background-gradient-end: #LIGHTBG;
+  selected-color: #TEXT;
+  selection-background-color: #HIGHLIGHT;
 }
 
 .expo-workspaces-name-entry:focus {
-    font-weight: bold;
-    font-style: italic;
-    transition-duration: 300;
+  color: #TEXT;
+  background-gradient-direction: horizontal;
+  background-gradient-start: #DARKBG;
+  background-gradient-end: #LIGHTBG;
+  selected-color: #SELTEXT;
+  selection-background-color: #HIGHLIGHT;
 }
 
 /* ===================================================================
