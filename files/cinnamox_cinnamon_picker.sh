@@ -14,7 +14,7 @@ function goldspice {
 	LOWTRANSDARKBG="rgba(56, 34, 24, 0.9)"; MODTRANSDARKBG="rgba(56, 34, 24, 0.75)"; HIGHTRANSDARKBG="rgba(56, 34, 24, 0.6)";
     ALWAYSTRANLBG="rgba(153, 70, 30, 0.4)"; ALWAYSTRANDBG="rgba(56, 34, 24, 0.5)";
 	WARNINGTXT="#e5e500"; ERRORTXT="#e50026"; LINKTXT="#f2c1a9";
-	THEMENAME="Cinnamox-Gold-Spice"; COLORDESC="a golden orange colour scheme and light text"; THEMESHORT="Aubergine";
+	THEMENAME="Cinnamox-Gold-Spice"; COLORDESC="a golden orange colour scheme and light text"; THEMESHORT="Gold-Spice";
 	build_theme;
 }
 function heather {
