@@ -74,6 +74,7 @@ StScrollBar StButton#vhandle:hover, StScrollBar StButton#hhandle:hover {
   text-align: center;
   border-radius: 10px;
 }
+
 /* ===================================================================
  * Shared button properties
  * ===================================================================*/
@@ -123,7 +124,7 @@ StScrollBar StButton#vhandle:hover, StScrollBar StButton#hhandle:hover {
 }
 .menu, .popup-menu {
   min-width: 100px;
-  margin: 0.2em;
+  margin: 0.5em;
 }
 /*.popup-combo-menu is for the scale view right click menu*/
 .menu, .popup-menu, .popup-combo-menu {
@@ -140,6 +141,9 @@ StScrollBar StButton#vhandle:hover, StScrollBar StButton#hhandle:hover {
     icon-size: 1.34em;
 }
 .popup-submenu-menu-item:open {
+  /*border-radius: 10px;
+  background-color: #HIGHLIGHT;
+  color: #SELTEXT;*/
 }
 .popup-sub-menu {
   background-gradient-direction: vertical;
@@ -254,11 +258,10 @@ StScrollBar StButton#vhandle:hover, StScrollBar StButton#hhandle:hover {
     font-weight: normal;
     height: 2.5em;
     width: 3em;
-    border: 1px solid #TEXT;
 }
 #panel:highlight {
-  /*background-color: #HIGHLIGHT;*/
-}
+    background-color: #HIGHLIGHT;
+} 
 .panel-dummy {
     background-color: rgba(255, 0, 0, 0.6);
 }
@@ -313,21 +316,37 @@ StScrollBar StButton#vhandle:hover, StScrollBar StButton#hhandle:hover {
   background-gradient-direction: vertical;
   background-gradient-start: #DARKBG;
   background-gradient-end: #LIGHTBG;
+  border: 1px solid #TEXT;
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
 }
 .panel-bottom {
   background-gradient-direction: vertical;
   background-gradient-start: #LIGHTBG;
   background-gradient-end: #DARKBG;
+  border: 1px solid #TEXT;
+  border-bottom: 0px;
+  border-left: 0px;
+  border-right: 0px;
 }
 .panel-left {
   background-gradient-direction: horizontal;
   background-gradient-start: #DARKBG;
   background-gradient-end: #LIGHTBG;
+  border: 1px solid #TEXT;
+  border-top: 0px;
+  border-left: 0px;
+  border-bottom: 0px;
 }
 .panel-right {
   background-gradient-direction: horizontal;
   background-gradient-start: #LIGHTBG;
   background-gradient-end: #DARKBG;
+  border: 1px solid #TEXT;
+  border-top: 0px;
+  border-bottom: 0px;
+  border-right: 0px;
 }
 .panel-corner {
     -panel-corner-radius: 0px;
@@ -335,7 +354,7 @@ StScrollBar StButton#vhandle:hover, StScrollBar StButton#hhandle:hover {
     -panel-corner-inner-border-width: 2px;
     -panel-corner-inner-border-color: transparent;
     -panel-corner-outer-border-width: 1px;
-    -panel-corner-outer-border-color: #536272;
+    -panel-corner-outer-border-color: #TEXT;
 }
 .panel-corner:active,
 .panel-corner:overview,
@@ -1190,8 +1209,6 @@ StScrollBar StButton#vhandle:hover, StScrollBar StButton#hhandle:hover {
   transition-duration: 300;
 }
 .panel-top .window-list-item-box, .panel-bottom .window-list-item-box {
-  height: 1.9em;
-  min-width: 2em;
   background-gradient-direction: vertical;
 }
 .panel-top .window-list-item-box {
@@ -1203,17 +1220,17 @@ StScrollBar StButton#vhandle:hover, StScrollBar StButton#hhandle:hover {
   background-gradient-end: #LIGHTBG;
 }
 .panel-left .window-list-item-box, .panel-right .window-list-item-box {
-  width: 2.4em;
-  min-height: 2.5em;
   background-gradient-direction: horizontal;
 }
 .panel-left .window-list-item-box {
   background-gradient-start: #LIGHTBG;
   background-gradient-end: #DARKBG;
+  margin-right: 1px;
 }
 .panel-right .window-list-item-box {
   background-gradient-start: #DARKBG;
   background-gradient-end: #LIGHTBG;
+  margin-left: 2px;
 }
 .panel-top .window-list-item-box:active,
 .panel-top .window-list-item-box:checked,
@@ -1516,24 +1533,36 @@ StScrollBar StButton#vhandle:hover, StScrollBar StButton#hhandle:hover {
 }
 
 .applet-box {
-    padding-left: 3px;
-    padding-right: 3px;
     color: #TEXT;
     transition-duration: 300;
     spacing: 3px;
+    border-radius: 10px;
 }
-.panel-top .applet-box,
+.panel-top .applet-box {
+    padding: 1px 3px;
+    margin-bottom: 2px;
+}
 .panel-bottom .applet-box {
-    spacing: 3px;
+    padding: 1px 3px;
+    margin-top: 2px;
+}
+.panel-left .applet-box {
+    padding: 3px 1px;
+    margin-right: 2px;
+}
+.panel-right .applet-box {
+    padding: 3px 1px;
+    margin-left: 2px;
 }
 .applet-box:checked, .applet-box:hover {
     color: #HIGHLIGHT;
 }
-.applet-box.vertical {
-    padding: 3px 0px;
-}
 .applet-box:highlight {
-    background-color: #HIGHLIGHT;
+    border: 1px solid #HIGHLIGHT;
+    color: #HIGHLIGHT;
+}
+.applet-box:highlight .applet-label {
+    color: #HIGHLIGHT;
 }
 .applet-label {
     font-weight: bold;
@@ -1546,6 +1575,11 @@ StScrollBar StButton#vhandle:hover, StScrollBar StButton#hhandle:hover {
 /*Full colour applets use .system-status-icon*/
 .applet-icon {
     color: #TEXT;
+    icon-size: 1.34em;
+    padding: 0px;
+    spacing: 0px;
+}
+.system-status-icon {
     icon-size: 1.34em;
     padding: 0px;
     spacing: 0px;
