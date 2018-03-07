@@ -349,17 +349,10 @@ StScrollBar StButton#vhandle:hover, StScrollBar StButton#hhandle:hover {
   border-right: 0px;
 }
 .panel-corner {
-    -panel-corner-radius: 0px;
-    -panel-corner-background-color: black;
-    -panel-corner-inner-border-width: 2px;
-    -panel-corner-inner-border-color: transparent;
-    -panel-corner-outer-border-width: 1px;
-    -panel-corner-outer-border-color: #TEXT;
 }
 .panel-corner:active,
 .panel-corner:overview,
 .panel-corner:focus {
-    -panel-corner-inner-border-color: rgba(255,255,255,0.8);
 }
 #appMenu {
     spacing: 4px;
@@ -1575,11 +1568,6 @@ StScrollBar StButton#vhandle:hover, StScrollBar StButton#hhandle:hover {
 /*Full colour applets use .system-status-icon*/
 .applet-icon {
     color: #TEXT;
-    icon-size: 1.34em;
-    padding: 0px;
-    spacing: 0px;
-}
-.system-status-icon {
     icon-size: 1.34em;
     padding: 0px;
     spacing: 0px;
