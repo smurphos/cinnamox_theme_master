@@ -261,7 +261,7 @@ StScrollBar StButton#vhandle:hover, StScrollBar StButton#hhandle:hover {
 }
 #panel:highlight {
     background-color: #HIGHLIGHT;
-} 
+}
 .panel-dummy {
     background-color: rgba(255, 0, 0, 0.6);
 }
