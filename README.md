@@ -1,6 +1,12 @@
 Cinnamox Theme Master
 =====
 
+### Important
+
+This repo is now archived. Ongoing development of the cinnamon theme is now undertaken at [Cinnamox-gtk-theme](https://github.com/smurphos/cinnamox-gtk-theme)
+
+### Introduction
+
 This repository contains the base templates and scripts used to make the Cinnamon element of the eight [Cinnamox Themes](https://github.com/smurphos/cinnamox_themes/releases).
 
 Metacity, GTK2, GTK3.18 and GTK3.20 elements are built using tools at [Cinnamox-gtk-theme](https://github.com/smurphos/cinnamox-gtk-theme) a fork of [Oomox-gtk-theme](https://github.com/actionless/oomox-gtk-theme).
