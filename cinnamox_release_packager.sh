@@ -1,5 +1,7 @@
 #!/bin/bash
 #Description: A script to move cinnamox_theme files to appropriate git directories to be pushed.
+echo "";
+read -p "Press enter to start the script.";
 SPICEDIR="$HOME/Github/other_projects/cinnamon-spices-themes";
 MYDIR="$HOME/Github/my_projects/cinnamox_themes";
 SOURCEDIR="$HOME/.themes";
